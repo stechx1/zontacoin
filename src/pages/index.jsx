@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { Button } from '../components';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <p>hi</p>
+        <Button type={"secondary"}>Click Here</Button>
       </main>
     </>
   );
