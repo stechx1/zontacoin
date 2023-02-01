@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { HeroSection } from '../collections';
-import { Button } from '../components';
+import { HeroSection, OurPartners } from '../collections';
 import { Navbar } from '../components/Navbar/Navbar';
 
 export default function Home() {
@@ -13,10 +12,13 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar/>
+      <Navbar />
       <main className='container mx-auto'>
         <section>
           <HeroSection />
+        </section>
+        <section>
+          <OurPartners />
         </section>
       </main>
     </>
