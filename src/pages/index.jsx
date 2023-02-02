@@ -1,6 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Features, HeroSection, OurPartners, ZontaIntro } from '../collections';
+import {
+  Features,
+  HeroSection,
+  OurPartners,
+  TradingModel,
+  ZontaIntro,
+} from '../collections';
 import { Navbar } from '../components/Navbar/Navbar';
 
 export default function Home() {
@@ -25,6 +31,9 @@ export default function Home() {
         </section>
         <section className='my-20'>
           <Features />
+        </section>
+        <section className='my-20'>
+          <TradingModel />
         </section>
       </main>
     </>
