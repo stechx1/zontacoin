@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {
+  EcoFriendly,
   Features,
   HeroSection,
   OurPartners,
@@ -36,6 +37,10 @@ export default function Home() {
           <TradingModel />
         </section>
       </main>
+
+        <section className='my-20'>
+          <EcoFriendly />
+        </section>
     </>
   );
 }
