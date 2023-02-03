@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import {
+  AdditionalFeatures,
   EcoFriendly,
   Features,
   HeroSection,
@@ -20,27 +21,35 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <main className='container mx-auto'>
-        <section>
-          <HeroSection />
-        </section>
-        <section>
-          <OurPartners className='my-10' />
-        </section>
-        <section className='my-20'>
-          <ZontaIntro />
-        </section>
-        <section className='my-20'>
-          <Features />
-        </section>
-        <section className='my-20'>
-          <TradingModel />
-        </section>
-      </main>
+      <main>
+        <div className='container mx-auto'>
+          <section>
+            <HeroSection />
+          </section>
+          <section>
+            <OurPartners className='my-10' />
+          </section>
+          <section className='my-20'>
+            <ZontaIntro />
+          </section>
+          <section className='my-20'>
+            <Features />
+          </section>
+          <section className='my-20'>
+            <TradingModel />
+          </section>
+        </div>
 
         <section className='my-20'>
           <EcoFriendly />
         </section>
+
+        <div className='container mx-auto'>
+          <section>
+            <AdditionalFeatures />
+          </section>
+        </div>
+      </main>
     </>
   );
 }
