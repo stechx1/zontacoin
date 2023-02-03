@@ -5,6 +5,7 @@ import {
   EcoFriendly,
   Features,
   HeroSection,
+  OurGoals,
   OurPartners,
   TradingModel,
   ZontaIntro,
@@ -47,6 +48,10 @@ export default function Home() {
         <div className='container mx-auto'>
           <section>
             <AdditionalFeatures />
+          </section>
+
+          <section className='my-24'>
+            <OurGoals />
           </section>
         </div>
       </main>
