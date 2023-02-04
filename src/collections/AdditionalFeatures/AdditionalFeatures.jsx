@@ -6,8 +6,8 @@ export const AdditionalFeatures = () => {
     <div className='flex flex-col justify-center items-center space-y-8'>
       {/* Logo */}
       <div className='flex-col space-y-2 justify-center items-center'>
-        <div className='flex space-x-4 justify-center items-center'>
-          <img src='/images/logo.svg' alt='logo' />
+        <div className='flex space-x-2 justify-center items-center'>
+          <img className='h-8' src='/images/logo-inverted.png' alt='logo' />
           <p>Zonta Coin</p>
         </div>
         <div className='flex flex-col justify-center items-center space-y-2'>

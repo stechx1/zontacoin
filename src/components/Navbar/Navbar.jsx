@@ -8,17 +8,18 @@ export const Navbar = () => {
   return (
     <nav class='border-gray-200 px-2 sm:px-4 py-2.5 shadow-sm'>
       <div class='container flex flex-wrap justify-between items-center mx-auto'>
-        <Link href={'https://riverdao.net'}>
-          <p class='flex items-center'>
+        <Link href={'/'}>
+          <p class='flex items-center text-xl font-bold'>
             <img
-              src='/images/river-logo.png'
+              src='/images/logo-inverted.png'
               class='mr-3 h-6 sm:h-9'
-              alt='River Logo'
+              alt='Zontacoin Logo'
             />
+            ZontaCoin
           </p>
         </Link>
         <button
-          onClick={() => setOpenMobileNav(prev => !prev)}
+          onClick={() => setOpenMobileNav((prev) => !prev)}
           data-collapse-toggle='navbar-default'
           type='button'
           class='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
@@ -43,33 +44,45 @@ export const Navbar = () => {
 
         <div class='hidden w-full md:block md:w-auto' id='navbar-default'>
           <ul class='flex flex-col items-center md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 '>
-            <li className='flex space-x-3'>
-              <div className='justify-left'>
-                <p className='text-[12px]'>ETH Gas</p>
-                <p className='text-[13px]'>35.59 Gwei</p>
-              </div>
-              <img src='/icons/gas.svg' alt='gas icon' />
+            <li>
+              <Link href='/'>
+                <p aria-current='page'>Home</p>
+              </Link>
             </li>
             <li>
               <Link href='/'>
-                <p aria-current='page'>Log In</p>
+                <p aria-current='page'>About</p>
+              </Link>
+            </li>
+            <li>
+              <Link href='/'>
+                <p aria-current='page'>Zonta Earn</p>
+              </Link>
+            </li>
+            <li>
+              <Link href='/'>
+                <p aria-current='page'>Trading Model</p>
+              </Link>
+            </li>
+            <li>
+              <Link href='/'>
+                <p aria-current='page'>Features</p>
               </Link>
             </li>
             <li>
               <Button type='primary' size='small'>
-                SIGN UP
-              </Button>
-            </li>
-            <li>
-              <Button type='primary' size='small'>
-                Connect Wallet
+                Buy Now
               </Button>
             </li>
           </ul>
         </div>
       </div>
       {/* Mobile */}
-      <div className={`${openMobileNav ? 'block' : 'hidden'} md:hidden lg:hidden xl:hidden`}>
+      <div
+        className={`${
+          openMobileNav ? 'block' : 'hidden'
+        } md:hidden lg:hidden xl:hidden`}
+      >
         <ul class='flex flex-col items-center text-left space-y-2'>
           <li>
             <Link href='/'>
