@@ -7,6 +7,7 @@ import {
   HeroSection,
   OurGoals,
   OurPartners,
+  OurRoadmap,
   TradingModel,
   ZontaIntro,
 } from '../collections';
@@ -52,6 +53,10 @@ export default function Home() {
 
           <section className='my-24'>
             <OurGoals />
+          </section>
+
+          <section className='my-24'>
+            <OurRoadmap />
           </section>
         </div>
       </main>
