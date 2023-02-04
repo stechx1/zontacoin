@@ -5,7 +5,7 @@ import { Button } from '../../components';
 export const HeroSection = () => {
   return (
     <div className='flex flex-col md:flex-row items-center space-y-6 md:space-x-18 mt-8 md:mt-0'>
-      <div className='flex flex-col space-y-4 md:space-y-8'>
+      <div className='flex flex-col space-y-4 md:space-y-8 md:items-stretch items-center'>
         <h1 className='text-2xl lg:text-5xl font-bold'>
           The future of sustainable cryptocurrency
         </h1>
