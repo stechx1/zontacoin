@@ -50,22 +50,22 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#intro'>
                 <p aria-current='page'>About</p>
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#zonta-earn'>
                 <p aria-current='page'>Zonta Earn</p>
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#trading'>
                 <p aria-current='page'>Trading Model</p>
               </Link>
             </li>
             <li>
-              <Link href='/'>
+              <Link href='#features'>
                 <p aria-current='page'>Features</p>
               </Link>
             </li>
@@ -86,24 +86,33 @@ export const Navbar = () => {
         <ul class='flex flex-col items-center text-left space-y-2'>
           <li>
             <Link href='/'>
-              <p aria-current='page'>Log In</p>
+              <p aria-current='page'>Home</p>
+            </Link>
+          </li>
+          <li>
+            <Link href='#intro'>
+              <p aria-current='page'>About</p>
+            </Link>
+          </li>
+          <li>
+            <Link href='#zonta-earn'>
+              <p aria-current='page'>Zonta Earn</p>
+            </Link>
+          </li>
+          <li>
+            <Link href='#trading'>
+              <p aria-current='page'>Trading Model</p>
+            </Link>
+          </li>
+          <li>
+            <Link href='#features'>
+              <p aria-current='page'>Features</p>
             </Link>
           </li>
           <li>
             <Button type='primary' size='small'>
-              SIGN UP
+              Buy Now
             </Button>
-          </li>
-          <li>
-            <Button type='primary' size='small'>
-              Connect Wallet
-            </Button>
-          </li>
-          <li className='flex space-x-3'>
-            <div className='justify-left'>
-              <p className='text-[13px]'>35.59 Gwei</p>
-            </div>
-            <img src='/icons/gas.svg' alt='gas icon' />
           </li>
         </ul>
       </div>

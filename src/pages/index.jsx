@@ -31,13 +31,13 @@ export default function Home() {
           <section>
             <OurPartners className='my-10' />
           </section>
-          <section className='my-20'>
+          <section id="intro" className='my-20'>
             <ZontaIntro />
           </section>
-          <section className='my-20'>
+          <section id='zonta-earn' className='my-20'>
             <Features />
           </section>
-          <section className='my-20'>
+          <section id="trading" className='my-20'>
             <TradingModel />
           </section>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         <div className='container mx-auto'>
-          <section>
+          <section id='features'>
             <AdditionalFeatures />
           </section>
 
