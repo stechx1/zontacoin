@@ -9,7 +9,7 @@ export const Features = () => {
         in React Native.
       </p>
 
-      <div>
+      <div className='flex flex-col space-y-8'>
         <FeatureCardWithImage
           img='staking.png'
           numImg={'01.svg'}

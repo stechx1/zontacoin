@@ -10,7 +10,7 @@ export const AdditionalFeatures = () => {
           <img className='h-8' src='/images/logo-inverted.png' alt='logo' />
           <p>Zonta Coin</p>
         </div>
-        <div className='flex flex-col justify-center items-center space-y-2'>
+        <div className='flex flex-col justify-center items-center space-y-2 text-center'>
           <h2 className='text-3xl font-bold'>Features of Zonta Coin</h2>
           <p className='text-secondary'>
             Decentralised cryptocurrency that is built on the EOS blockchain

@@ -7,7 +7,7 @@ export const EcoFriendly = () => {
       style={{ backgroundImage: `url(/images/eco-friendly-bg.png)` }}
     >
       <div className='container mx-auto flex flex-col space-y-10'>
-        <div className='w-[30%] space-y-2'>
+        <div className='md:w-[30%] space-y-2'>
           <h2 className='text-4xl font-bold'>Eco Friendly</h2>
           <h3 className='text-lg'>We are Green</h3>
           <p className='text-secondary'>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export const RoadmapCard = ({ phaseNum, stageColor, para, featureList }) => {
   return (
-    <div className='flex flex-col space-y-8 bg-[#202020] p-6 rounded-lg'>
+    <div className='flex flex-col space-y-8 bg-[#202020] p-6 rounded-lg mt-6'>
       {/* Phase */}
       <div>
         <h3 className='text-sm uppercase text-secondary'>Phase {phaseNum}</h3>

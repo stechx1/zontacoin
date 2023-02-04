@@ -88,12 +88,12 @@ export const OurRoadmap = () => {
   ];
 
   return (
-    <div className='flex flex-col space-y-16 items-center justify-center'>
+    <div className='flex flex-col space-y-14 items-center justify-center'>
       <div className='text-center'>
         <h2 className='text-3xl font-bold'>Our Roadmap</h2>
       </div>
 
-      <div className='flex space-x-6'>
+      <div className='flex flex-col md:flex-row md:space-x-6'>
         <RoadmapCard
           phaseNum={'1'}
           stageColor={'Green'}

@@ -8,7 +8,7 @@ export const OurGoals = () => {
         <p className='text-secondary'>{`ZontaCoin's goals are listed bellow`}</p>
       </div>
 
-      <div className='flex space-x-6'>
+      <div className='flex flex-col md:flex-row md:space-x-6'>
         <GoalCard
           imgSrc={'01.svg'}
           heading='Zero Inflation'

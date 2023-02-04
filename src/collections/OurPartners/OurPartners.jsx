@@ -5,7 +5,7 @@ export const OurPartners = () => {
   return (
     <div className='flex flex-col justify-center items-center my-16 space-y-6'>
       <p className='text-2xl'>Our Partners</p>
-      <div className='flex space-x-10'>
+      <div className='flex flex-col md:flex-row space-x-10'>
         <HoverableIcon
           walmart
           image='/images/logos/walmart.svg'

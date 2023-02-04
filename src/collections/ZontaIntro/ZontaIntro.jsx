@@ -10,7 +10,7 @@ export const ZontaIntro = () => {
         </p>
       </div>
 
-      <div className='flex space-x-4'>
+      <div className='flex md:flex-row flex-col md:space-x-4'>
         <FeatureCard
           imgSrc={'zero-inflation.svg'}
           heading='Zero Inflation'

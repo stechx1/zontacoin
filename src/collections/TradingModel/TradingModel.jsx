@@ -3,8 +3,8 @@ import { Model } from './Model';
 /* eslint-disable @next/next/no-img-element */
 export const TradingModel = () => {
   return (
-    <div className='flex justify-between items-center'>
-      <div className='flex w-[40%] flex-col space-y-12'>
+    <div className='flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0'>
+      <div className='flex md:w-[40%] flex-col space-y-12'>
         <div className='flex-col'>
           <h2 className='text-2xl font-bold'>Zonta Trading Model</h2>
           <p className='text-secondary'>Locked & flexible trading</p>
@@ -26,7 +26,7 @@ export const TradingModel = () => {
           />
         </div>
       </div>
-      <div className='w-1/2'>
+      <div className='md:w-1/2'>
         <img src='/images/trading-model.png' alt='trading-model' />
       </div>
     </div>
