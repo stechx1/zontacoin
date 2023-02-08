@@ -3,7 +3,7 @@ import { Button } from '../../components';
 export const EcoFriendly = () => {
   return (
     <div
-      className='flex flex-col justify-center h-screen bg-cover bg-center w-full'
+      className='flex flex-col justify-center h-screen bg-cover bg-center w-full px-4'
       style={{ backgroundImage: `url(/images/eco-friendly-bg.png)` }}
     >
       <div className='container mx-auto flex flex-col space-y-10'>
