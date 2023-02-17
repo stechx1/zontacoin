@@ -12,6 +12,7 @@ import {
   ZontaIntro,
 } from '../collections';
 import { Navbar } from '../components/Navbar/Navbar';
+import { MetaMask } from '../functions/MetaMask';
 
 export default function Home() {
   return (

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import { Button } from '../../components';
+import { MetaMask } from '../../functions/MetaMask';
 
 export const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ export const HeroSection = () => {
           Eco-friendly mining and innovative staking options for maximum returns
         </p>
         <div>
-          <Button>Buy Now</Button>
+          <MetaMask amount={97}>Buy Now</MetaMask>
         </div>
       </div>
       <div>
