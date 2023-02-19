@@ -136,7 +136,7 @@ export const ContactForm = () => {
           />
         </div>
         <div className='text-center'>
-          <button type='submit'>Submit</button>
+          <button className='bg-blue-500 py-2 px-8 rounded-full ml-4' type='submit'>Submit</button>
         </div>
       </div>
     </form>

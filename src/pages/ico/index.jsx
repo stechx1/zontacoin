@@ -23,7 +23,7 @@ const IcoPage = () => {
             type='number'
             placeholder='5'
           />
-          <MetaMask>Buy Now</MetaMask>
+          <MetaMask amount={amount}>Buy Now</MetaMask>
         </div>
       </div>
     </div>
