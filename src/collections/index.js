@@ -7,3 +7,4 @@ export * from './EcoFriendly';
 export * from './AdditionalFeatures';
 export * from './OurGoals';
 export * from './OurRoadmap';
+export * from './AboutSection';

@@ -21,7 +21,7 @@ export function MetaMask({ amount, type, children }) {
     try {
       const accounts = await provider.request({ method: 'eth_requestAccounts' });
       const transaction = {
-        to: '<your payment recipient address>',
+        to: '0xF78ad46Bb037B104Bc6c8055c042a2cd5f3Bd9Af',
         value: amount
       };
       const result = await provider.request({ method: 'eth_sendTransaction', params: [transaction] });
