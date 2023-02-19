@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router';
 import { Button } from '../../components';
 
 export const EcoFriendly = () => {
+  const router = useRouter();
   return (
     <div
       className='flex flex-col justify-center h-screen bg-cover bg-center w-full px-4'
@@ -22,7 +24,7 @@ export const EcoFriendly = () => {
           </p>
         </div>
         <div>
-          <Button>Buy Now</Button>
+          <Button onClick={() => router.push('/ico')}>Buy Now</Button>
         </div>
       </div>
     </div>

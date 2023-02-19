@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from 'next/router';
 import React from 'react';
 import { AboutSection } from '../../collections';
 import { Button } from '../../components';
 
 const AboutPage = () => {
+  const router = useRouter();
   const abouts = [
     {
       id: 1,
@@ -57,14 +59,16 @@ const AboutPage = () => {
             sure that your transactions are secure, transparent, and processed
             in a matter of seconds.
           </p>
-          <Button>Buy Now</Button>
+          <Button onClick={() => router.push('/ico')}>Buy Now</Button>
         </div>
       </section>
 
       <section>
         <div className='flex items-center'>
           <div className='flex flex-col space-y-8 m-10 ml-24 w-1/2'>
-            <h2 className='text-3xl font-bold'>Thankyou for considering ZontaCoin</h2>
+            <h2 className='text-3xl font-bold'>
+              Thankyou for considering ZontaCoin
+            </h2>
             <p>{`We're committed to providing a platform that is secure, accessible, and easy to use. Whether you're an experienced cryptocurrency trader or new to the world of digital currency, we're confident that our platform has something to offer you.`}</p>
             <p>
               Thank you for considering Zonta Coin as your preferred
@@ -73,7 +77,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img src="/images/thanks.png" alt="thanks" />
+            <img src='/images/thanks.png' alt='thanks' />
           </div>
         </div>
       </section>

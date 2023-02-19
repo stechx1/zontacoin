@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { Button } from '../Button';
 
 /* eslint-disable @next/next/no-img-element */
@@ -7,6 +8,7 @@ export const AdditionalFeatureCard = ({
   para,
   imgSrc,
 }) => {
+  const router = useRouter();
   return (
     <div className='bg-[#23262F] flex flex-col md:flex-row justify-between items-center rounded-lg max-w-[80%] mx-auto'>
       {/* Content */}
@@ -17,7 +19,7 @@ export const AdditionalFeatureCard = ({
           <p className='text-secondary'>{para}</p>
         </div>
         <div>
-          <Button size='small' type={'secondary'}>
+          <Button onClick={() => router.push("/ico")} size='small' type={'secondary'}>
             Buy Now
           </Button>
         </div>

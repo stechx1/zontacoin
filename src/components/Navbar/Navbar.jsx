@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Button } from '../Button';
 
 /* eslint-disable @next/next/no-img-element */
 export const Navbar = () => {
+  const router = useRouter();
   const [openMobileNav, setOpenMobileNav] = useState(false);
   return (
     <nav class='border-gray-200 px-2 sm:px-4 py-2.5 shadow-sm'>
@@ -70,7 +72,11 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Button type='primary' size='small'>
+              <Button
+                type='primary'
+                size='small'
+                onClick={() => router.push('/ico')}
+              >
                 Buy Now
               </Button>
             </li>
@@ -110,7 +116,11 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Button type='primary' size='small'>
+            <Button
+              type='primary'
+              size='small'
+              onClick={() => router.push('/ico')}
+            >
               Buy Now
             </Button>
           </li>

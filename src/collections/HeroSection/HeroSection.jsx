@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { Button } from '../../components';
 import { MetaMask } from '../../functions/MetaMask';
 
 export const HeroSection = () => {
+  const router = useRouter();
   return (
     <div className='flex flex-col md:flex-row items-center space-y-6 md:space-x-18 mt-8 md:mt-0'>
       <div className='flex flex-col space-y-4 md:space-y-8 md:items-stretch items-center'>
@@ -14,7 +16,7 @@ export const HeroSection = () => {
           Eco-friendly mining and innovative staking options for maximum returns
         </p>
         <div>
-          <MetaMask amount={97}>Buy Now</MetaMask>
+          <Button onClick={() => router.push('/ico')}>Buy Now</Button>
         </div>
       </div>
       <div>
