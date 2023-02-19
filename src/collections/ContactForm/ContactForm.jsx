@@ -33,7 +33,7 @@ export const ContactForm = () => {
             First Name
           </label>
           <input
-            class='appearance-none block w-full bg-gray-800 text-gray-300  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
+            class='appearance-none block w-full bg-gray-800 text-gray-300  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border focus:border-white'
             id='firstname'
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
@@ -56,7 +56,7 @@ export const ContactForm = () => {
           </label>
 
           <input
-            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:border focus:border-white'
             id='lastname'
             name='lastname'
             value={lastName}
@@ -80,7 +80,7 @@ export const ContactForm = () => {
             Email Address
           </label>
           <input
-            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border focus:border-white'
             id='email'
             name='email'
             value={email}
@@ -98,7 +98,7 @@ export const ContactForm = () => {
             Subject
           </label>
           <input
-            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border focus:border-white'
             id='subject'
             name='subject'
             value={subject}
@@ -121,13 +121,13 @@ export const ContactForm = () => {
           </label>
           <textarea
             rows={8}
-            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500'
+            class='appearance-none block w-full bg-gray-800 text-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border focus:border-white'
             id='message'
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             type='text'
             name='message'
-            placeholder='Subject Here'
+            placeholder='Message Here'
           />
           <ValidationError
             prefix='Message'
@@ -136,7 +136,12 @@ export const ContactForm = () => {
           />
         </div>
         <div className='text-center'>
-          <button className='bg-blue-500 py-2 px-8 rounded-full ml-4' type='submit'>Submit</button>
+          <button
+            className='bg-blue-500 py-2 px-8 rounded-full ml-4'
+            type='submit'
+          >
+            Submit
+          </button>
         </div>
       </div>
     </form>

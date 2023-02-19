@@ -49,7 +49,7 @@ const AboutPage = () => {
         </section>
       </div>
 
-      <section className='bg-[#18191D] p-32'>
+      <section className='bg-[#18191D] p-4 md:p-32'>
         <div className='flex flex-col space-y-10 justify-center items-center'>
           <h2 className='text-3xl font-black'>No Transaction Fees</h2>
           <p className='text-center w-[80%]'>
@@ -64,8 +64,8 @@ const AboutPage = () => {
       </section>
 
       <section>
-        <div className='flex items-center'>
-          <div className='flex flex-col space-y-8 m-10 ml-24 w-1/2'>
+        <div className='flex flex-col md:flex-row items-center'>
+          <div className='flex flex-col space-y-8 md:m-10 md:ml-24 md:w-1/2 m-4'>
             <h2 className='text-3xl font-bold'>
               Thankyou for considering ZontaCoin
             </h2>

@@ -21,9 +21,9 @@ const IcoPage = () => {
             onChange={(e) => setAmount(e.target.value)}
             name='zonta'
             type='number'
-            placeholder='5'
+            placeholder='5 ZontaCoins'
           />
-          <MetaMask amount={amount}>Buy Now</MetaMask>
+          <MetaMask amount={amount * 1.25}>Buy Now</MetaMask>
         </div>
       </div>
     </div>
