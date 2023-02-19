@@ -52,7 +52,7 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='#intro'>
+              <Link href='/about'>
                 <p aria-current='page'>About</p>
               </Link>
             </li>
@@ -62,8 +62,8 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='#trading'>
-                <p aria-current='page'>Trading Model</p>
+              <Link href='/contact'>
+                <p aria-current='page'>Contact Us</p>
               </Link>
             </li>
             <li>
@@ -96,7 +96,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href='#intro'>
+            <Link href='/about'>
               <p aria-current='page'>About</p>
             </Link>
           </li>
@@ -106,8 +106,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href='#trading'>
-              <p aria-current='page'>Trading Model</p>
+            <Link href='/contact'>
+              <p aria-current='page'>Contact Us</p>
             </Link>
           </li>
           <li>
