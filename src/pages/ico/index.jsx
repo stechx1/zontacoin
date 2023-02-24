@@ -23,7 +23,7 @@ const IcoPage = () => {
             type='number'
             placeholder='5 ZontaCoins'
           />
-          <MetaMask amount={amount * 1.25}>Buy Now</MetaMask>
+          <MetaMask amount={amount * 0.08}>Buy Now</MetaMask>
         </div>
       </div>
     </div>

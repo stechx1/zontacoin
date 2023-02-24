@@ -15,10 +15,14 @@ const ContactPage = () => {
       center: [-96.810406, 32.757889],
       zoom: 12,
     });
+    // Create a new marker
+    const marker = new mapboxgl.Marker()
+      .setLngLat([-96.810406, 32.757889]) // Set the marker's location
+      .addTo(map.current); // Add the marker to the map
   }, []);
 
   return (
-    <div className='ml-20'>
+    <div className='md:ml-20'>
       <h2 className='text-4xl font-bold text-center my-10'>Contact Us</h2>
       <div className='flex md:flex-row flex-col space-x-8 '>
         <div className='md:max-w-1/2'>
@@ -26,8 +30,8 @@ const ContactPage = () => {
           <ContactForm />
         </div>
         <div
-          style={{ height: '500px', width: '50%' }}
-          className='map-container md:max-w-1/2'
+          style={{ height: '500px' }}
+          className='map-container md:w-1/2'
           ref={mapContainer}
         />
       </div>

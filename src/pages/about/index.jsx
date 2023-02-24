@@ -37,7 +37,7 @@ const AboutPage = () => {
         </div>
 
         <section className='my-[90px]'>
-          <div className='flex flex-col space-y-20'>
+          <div className='flex flex-col space-y-8 md:space-y-20'>
             {abouts.map((about) => (
               <AboutSection
                 key={about.id}
@@ -49,7 +49,7 @@ const AboutPage = () => {
         </section>
       </div>
 
-      <section className='bg-[#18191D] p-4 md:p-32'>
+      <section className='bg-[#18191D] p-4 py-8 md:p-32'>
         <div className='flex flex-col space-y-10 justify-center items-center'>
           <h2 className='text-3xl font-black'>No Transaction Fees</h2>
           <p className='text-center w-[80%]'>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useEffect, useState} from 'react'
 import BlogBox from '../../components/Blog/BlogBox'
 import FeatureBlogItem from '../../components/Blog/FeatureBlogItem'
@@ -6,7 +7,7 @@ import { db } from '../../../FirebaseConfig'
 import { getDocs, collection } from 'firebase/firestore'
 import LoadingSpinner from '../../components/Spinner/LoadingSpinner'
 
-const blogs = () => {
+const Blogs = () => {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(false)
   const router = useRouter();
@@ -38,9 +39,9 @@ const blogs = () => {
   }
   return (
     <div>
-      <h2 className='text-4xl font-bold text-center sm:my-20 mx-5'>Blogs</h2>
+      <h2 className='text-4xl font-bold text-center sm:my-12 mx-5'>Blogs</h2>
 
-      <div className="flex md:flex-row flex-col gap-28 mx-20 ">
+      {/* <div className="flex md:flex-row flex-col gap-28 mx-20 ">
         <div className=' flex flex-col md:w-[60%] sm:w-[70%] w-[80%]'>
           <div>
             <img src="/images/eco-friendly-hero.png" alt="blog" className=' lg:w-[550px] h-80 md:w-[400px] w-[400px] rounded-[4px]' />
@@ -64,10 +65,10 @@ const blogs = () => {
           <FeatureBlogItem />
 
         </div>
-      </div>
+      </div> */}
 
       <div className='sm:mx-20 mx-5'>
-        <h2 className='text-3xl font-bold my-10 '>Latest Blogs</h2>
+        {/* <h2 className='text-3xl font-bold my-10 '>Latest Blogs</h2> */}
         {loading ? <div className='flex items-center justify-center'><LoadingSpinner/> </div> : <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-6 sm:gap-4 gap-2">
           {posts.map((element, index)=>{
             return <BlogBox key={index} postTitle={element.postTitle} postImage={element.postImage} content={element.content} />
@@ -89,4 +90,4 @@ const blogs = () => {
   )
 }
 
-export default blogs
+export default Blogs
