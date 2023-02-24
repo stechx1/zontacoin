@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-const blogDetail = () => {
+const BlogDetail = () => {
     const router = useRouter();
 
     return (
@@ -43,4 +43,4 @@ const blogDetail = () => {
     )
 }
 
-export default blogDetail
+export default BlogDetail

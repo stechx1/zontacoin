@@ -13,7 +13,7 @@ import Router from 'next/router';
 
 import LoadingSpinner from '../../components/Spinner/LoadingSpinner';
 
-const createBlog = () => {
+const CreateBlog = () => {
 
     const [data, setData] = useState({ title: '', content: '', redirect: '' })
     const onChange = (e) => {
@@ -104,4 +104,4 @@ const createBlog = () => {
     )
 }
 
-export default createBlog
+export default CreateBlog
