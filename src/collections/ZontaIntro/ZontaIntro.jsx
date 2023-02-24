@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router';
 import { Button, FeatureCard } from '../../components';
 
 export const ZontaIntro = () => {
+  const router = useRouter();
   return (
     <div className='flex flex-col p-4 justify-center items-center space-y-14'>
       <div className='flex flex-col space-y-4 justify-center items-center'>
@@ -31,7 +33,7 @@ export const ZontaIntro = () => {
       </div>
 
       <div>
-        <Button>Buy Now</Button>
+        <Button onClick={() => router.push('/ico')}>Buy Now</Button>
       </div>
     </div>
   );
